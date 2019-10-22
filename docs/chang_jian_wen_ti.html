@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>常见问题 · GitBook</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>常见问题 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.3">
         
         
         
@@ -558,14 +558,26 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x5E38;&#x89C1;&#x95EE;&#x9898;">&#x5E38;&#x89C1;&#x95EE;&#x9898;</h1><hr><h2 id="1-&#x6A21;&#x5757;&#x4E22;&#x5931;-error-cannot-find-module-xxx">1. &#x6A21;&#x5757;&#x4E22;&#x5931; <code>Error: Cannot find module &apos;xxx&apos;</code></h2><p>&#x5982;&#x56FE;</p><p><img src="screenshot-issue-1.png"></p><p>&#x4E00;&#x822C;&#x662F;&#x7531;&#x4E8E;&#x4E0A;&#x6B21; npm &#x5B89;&#x88C5;&#x5F02;&#x5E38;&#x4E2D;&#x6B62;&#x5BFC;&#x81F4;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;&#x5378;&#x8F7D;&#x540E;&#x91CD;&#x65B0;&#x5B89;&#x88C5; nowa &#x5DE5;&#x5177;&#x6765;&#x89E3;&#x51B3;&#x3002;</p><pre><code class="lang-shell">rm -rf `npm root -g`/nowa-* ~/.nowa
-nowa install --registry=https://registry.npm.taobao.org</code></pre>
-<h2 id="2-&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;-typescript-&#x5199;-jsx-&#x62A5;&#x9519;">2. &#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528; typescript &#x5199; jsx &#x62A5;&#x9519;</h2><p><a href="https://github.com/techird/blog/issues/3" target="_blank">TS &#x548C; JSX &#x517C;&#x5BB9;&#x95EE;&#x9898;</a>&#x7531;&#x6765;&#x5DF2;&#x4E45;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x4E0D;&#x652F;&#x6301;&#x7684;&#x3002;</p><p>&#x5982;&#x679C;&#x8981;&#x652F;&#x6301;&#xFF0C;&#x9700;&#x8981;&#x5728; tsconfig.json &#x91CC;&#x9762;&#x52A0;&#x4E2A;&#x914D;&#x7F6E;&#xFF1A;</p><pre><code class="lang-json">{
+                                <h1 id="&#x5E38;&#x89C1;&#x95EE;&#x9898;">&#x5E38;&#x89C1;&#x95EE;&#x9898;</h1>
+<hr>
+<h2 id="1-&#x6A21;&#x5757;&#x4E22;&#x5931;-error-cannot-find-module-xxx">1. &#x6A21;&#x5757;&#x4E22;&#x5931; <code>Error: Cannot find module &apos;xxx&apos;</code></h2>
+<p>&#x5982;&#x56FE;</p>
+<p><img src="screenshot-issue-1.png" alt=""></p>
+<p>&#x4E00;&#x822C;&#x662F;&#x7531;&#x4E8E;&#x4E0A;&#x6B21; npm &#x5B89;&#x88C5;&#x5F02;&#x5E38;&#x4E2D;&#x6B62;&#x5BFC;&#x81F4;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;&#x5378;&#x8F7D;&#x540E;&#x91CD;&#x65B0;&#x5B89;&#x88C5; nowa &#x5DE5;&#x5177;&#x6765;&#x89E3;&#x51B3;&#x3002;  </p>
+<pre><code class="lang-shell">rm -rf `npm root -g`/nowa-* ~/.nowa
+nowa install --registry=https://registry.npm.taobao.org
+</code></pre>
+<h2 id="2-&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;-typescript-&#x5199;-jsx-&#x62A5;&#x9519;">2. &#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528; typescript &#x5199; jsx &#x62A5;&#x9519;</h2>
+<p><a href="https://github.com/techird/blog/issues/3" target="_blank">TS &#x548C; JSX &#x517C;&#x5BB9;&#x95EE;&#x9898;</a>&#x7531;&#x6765;&#x5DF2;&#x4E45;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x4E0D;&#x652F;&#x6301;&#x7684;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8981;&#x652F;&#x6301;&#xFF0C;&#x9700;&#x8981;&#x5728; tsconfig.json &#x91CC;&#x9762;&#x52A0;&#x4E2A;&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-json">{
   <span class="hljs-string">&quot;compilerOptions&quot;</span>: {
     <span class="hljs-string">&quot;jsx&quot;</span>: <span class="hljs-string">&quot;react&quot;</span>
   }
-}</code></pre>
+}
+</code></pre>
 <p>&#x66F4;&#x591A;&#x914D;&#x7F6E;&#x53EF;&#x67E5;&#x770B; <a href="https://www.typescriptlang.org/docs/handbook/react-&amp;-webpack.html" target="_blank">TypeScript &#x5B98;&#x65B9;&#x6587;&#x6863;</a>&#x3002;</p>
+
                                 
                                 </section>
                             
@@ -604,7 +616,7 @@ nowa install --registry=https://registry.npm.taobao.org</code></pre>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"常见问题","level":"1.6","depth":1,"previous":{"title":"升级到 Nowa2","level":"1.5","depth":1,"path":"upgrade-to-nowa2.md","ref":"upgrade-to-nowa2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chang_jian_wen_ti.md","mtime":"2019-03-13T02:37:27.313Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2019-03-13T03:19:56.157Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"常见问题","level":"1.6","depth":1,"previous":{"title":"升级到 Nowa2","level":"1.5","depth":1,"path":"upgrade-to-nowa2.md","ref":"upgrade-to-nowa2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chang_jian_wen_ti.md","mtime":"2019-10-22T09:51:11.592Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-22T10:56:02.410Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -612,10 +624,6 @@ nowa install --registry=https://registry.npm.taobao.org</code></pre>
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
-    
-        
-        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
